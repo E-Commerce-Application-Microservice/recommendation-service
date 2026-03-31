@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: clahanstore-config
+  namespace: clahanstore
+data:
+  MONGO_URI_RECOMMENDATION: mongodb://mongodb:27017/recommendationdb
+  RECOMMENDATION_SERVICE_URL: http://recommendation-service:3013
